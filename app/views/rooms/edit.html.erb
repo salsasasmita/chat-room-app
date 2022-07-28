@@ -1,0 +1,12 @@
+<h1>Editing room</h1>
+
+<%= render "form", room: @room %>
+
+<br>
+
+<div>
+  <%= link_to "Show this room", @room %> |
+  <%= button_to "Destroy this room", @room, method: :delete, data: { confirm: 'Are you sure?' } %>
+  <%= link_to "Back to rooms", rooms_path %>
+
+</div>
